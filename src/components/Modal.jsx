@@ -179,7 +179,8 @@ const Modal = ({
 
     return (
         <div className="modal fixed inset-0 flex items-center justify-center p-4">
-            <div className="modal-content bg-white p-4 rounded-lg shadow-lg w-full max-w-md h-auto overflow-y-auto">
+            <div
+                className="modal-content arcade-font-modal flex items-center justify-center flex-col bg-white h-[100vh] p-4 rounded-lg shadow-lg w-full max-w-md h-auto overflow-y-auto">
     <span className="close cursor-pointer text-xl" onClick={closeModal}>
       &times;
     </span>
@@ -187,7 +188,7 @@ const Modal = ({
                     {isBoss ? "☠️Boss Engaged❗❗❗" : "🤖Enemy spotted! Prepare to fight❗❗"}
                 </p>
 
-                <div className="button-wrapper flex justify-around mb-4">
+                <div className="button-wrapper flex justify-around items-center mb-4">
                     <button
                         onClick={() => handleAction(handleAttack)}
                         className="attack-modal-btn bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700 transition-colors"

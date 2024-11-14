@@ -1,4 +1,5 @@
-import {useState, useEffect} from "react";
+// App.jsx
+import {useEffect, useState} from "react";
 import PlayerController from "./components/PlayerController";
 import MapBase from "./components/MapBase";
 import NPCController from "./components/NPCController";
@@ -11,6 +12,7 @@ import GameOver from "./components/GameOver";
 import StarterScreen from "./components/StarterScreen";
 import theme from "./sounds/main-theme.mp3";
 import battle from "./sounds/battle_theme.mp3";
+import {Upgrades} from "./components/Upgrades.jsx";
 
 const App = () => {
     // Define all states
@@ -27,6 +29,7 @@ const App = () => {
     const [bossHealth, setBossHealth] = useState(2);
     const [bossStrength] = useState(20);
     const [hasEntered, setHasEntered] = useState(false);
+    const [hasPressedUpgrades, setHasPressedUpgrades] = useState(false);
     const [talkCounter, setTalkCounter] = useState(0);
     const [enemyDeathCounter, setEnemyDeathCounter] = useState(0);
     const [currentEnemy, setCurrentEnemy] = useState(1);
@@ -88,14 +91,32 @@ const App = () => {
         }
     }, [isModalOpen]);
 
+    if (hasPressedUpgrades) {
+        return (
+            <>
+                <div>
+                    <Header/>
+                    <Upgrades setHasPressedUpgrades={setHasPressedUpgrades}/>
+                    <Footer
+                        isModalOpen={isModalOpen}
+                        playerHealth={playerHealth}
+                        playing={playing}
+                        toggle={toggle}
+                        currentTheme={currentTheme}
+                    />
+                </div>
+            </>
+        );
+    }
+
     if (!hasEntered) {
         return (
             <>
                 <div className="player-starter-page">
                     <Header/>
                     <StarterScreen
-                        hasEntered={hasEntered}
                         setHasEntered={setHasEntered}
+                        setHasPressedUpgrade={setHasPressedUpgrades}
                     />
                     <Footer
                         isModalOpen={isModalOpen}

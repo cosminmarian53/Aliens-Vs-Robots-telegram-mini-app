@@ -3,7 +3,7 @@ import alienPlayerStarter from "../assets/alien front(move+blink).gif";
 import "../index.css";
 
 // eslint-disable-next-line react/prop-types
-function StarterScreen({setHasEntered}) {
+function StarterScreen({setHasEntered, setHasPressedUpgrade}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <div className="starter-screen">
@@ -55,6 +55,14 @@ function StarterScreen({setHasEntered}) {
                 </div>
             )}
             <p className="text-3xl font-bold">Defeat the boss to win the game(and get amazing rewards!)</p>
+            <p className="text-3xl font-bold">Upgrade your character to increase your chances of winning❗</p>
+            <button
+                className="bg-slate-300 upgrade-btn arcade-font py-2 px-4 rounded hover:bg-slate-500 transition-colors"
+                onClick={() => {
+                    setHasPressedUpgrade(true);
+                }}>
+                Upgrades
+            </button>
             <p className="text-3xl font-bold">
                 Press the button bellow in order to start the game❗
             </p>

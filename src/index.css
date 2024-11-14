@@ -348,6 +348,10 @@ footer {
 
 }
 
+.upgrade-btn:active {
+    transform: translateY(3px);
+}
+
 .starter-screen .modal .starter-modal-content .starter-modal-wrapper p {
     font-family: "ArcadeClassic", sans-serif;
     text-decoration: none;
