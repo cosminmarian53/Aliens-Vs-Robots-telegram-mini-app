@@ -4,6 +4,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.interact-btn {
+    font-family: "ArcadeClassic", sans-serif;
+    font-size: 1rem;
+    padding: 10px 25px;
+    text-align: center;
+    animation: blink 0.3s infinite;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .map-base-table {
@@ -19,27 +31,27 @@
     width: 50px;
     height: 50px;
     box-sizing: border-box;
-    background-image: url("../../public/floor3.png"); /* Relative path from the public folder */
+    background-image: url("../assets/floor3.png"); /* Relative path from the public folder */
     background-size: cover;
     background-repeat: no-repeat;
     /* Adjust the duration and timing function as needed */
 }
 
 .cell.solid-block {
-    background-image: url("../../public/block.png");
+    background-image: url("../assets/block.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.player {
-    background-image: url("../../public/GIFS/IDLE/alien front.gif");
+    background-image: url("../assets/GIFS/IDLE/alien front.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
 }
 
 .cell.npc {
-    background-image: url("../../public/robot_front.gif");
+    background-image: url("../assets/robot_front.gif");
     background-size: cover;
     background-repeat: no-repeat;
     /* background displays black for some reason, and it should be transparent, fix it */
@@ -47,31 +59,31 @@
 }
 
 .cell.tp-open-metal {
-    background-image: url("../../public/tps/floor+tp\(firstmap_open\).png");
+    background-image: url("../assets/tps/floor+tp(firstmap_open).png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.tp-closed-metal {
-    background-image: url("../../public/tps/floor+tp\(firstmap_close\).png");
+    background-image: url("../assets/tps/floor+tp(firstmap_close).png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.tp-open-mud {
-    background-image: url("../../public/tps/mud+tp\(secondmap_open\).png");
+    background-image: url("../assets/tps/mud+tp(secondmap_open).png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.tp-closed-mud {
-    background-image: url("../../public/tps/mud+tp\(secondmap_close\).png");
+    background-image: url("../assets/tps/mud+tp(secondmap_close).png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.border {
-    background-image: url("../../public/spike\ border.png"); /* Relative path from the public folder */
+    background-image: url("../assets/spike border.png"); /* Relative path from the public folder */
     background-size: cover;
 }
 
@@ -93,28 +105,28 @@
 
 /* CHARACTHER MODEL */
 .cell.player-up {
-    background-image: url("../../public/GIFS/MOVING/alien\ front\(move+blink\).gif");
+    background-image: url("../assets/GIFS/MOVING/alien front(move+blink).gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
 }
 
 .cell.player-down {
-    background-image: url("../../public/GIFS/MOVING/alien\ back\(move+blink\).gif");
+    background-image: url("../assets/GIFS/MOVING/alien back(move+blink).gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
 }
 
 .cell.player-left {
-    background-image: url("../../public/GIFS/MOVING/alien\ left\(move+blink\).gif");
+    background-image: url("../assets/GIFS/MOVING/alien left(move+blink).gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
 }
 
 .cell.player-right {
-    background-image: url("../../public/GIFS/MOVING/alien\ right\(move+blink\).gif");
+    background-image: url("../assets/GIFS/MOVING/alien right(move+blink).gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -129,13 +141,13 @@
 
 /* CELLS-BOSS ARENA */
 .boss-tile {
-    background-image: url("../../public/mud_tile.png");
+    background-image: url("../assets/mud_tile.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cell.boss {
-    background-image: url("../../public/boss.gif");
+    background-image: url("../assets/boss.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -153,16 +165,17 @@
 
 .modal-content {
     @apply bg-white p-4 rounded-lg shadow-lg w-full max-w-md h-auto overflow-y-auto relative;
-    background-image: url("../../public/bigframe.gif");
+    background-image: url("../assets/bigframe.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 10px;
 }
 
 
 .alien-npc-name {
     font-family: "ArcadeClassic", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     text-shadow: 2px 2px 2px black;
     animation: blink 0.3s infinite;
@@ -172,7 +185,7 @@
 .alien-npc-box {
     padding: 20px;
     font-family: "ArcadeClassic", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     text-shadow: 2px 2px 2px black;
     animation: blink 0.3s infinite;
@@ -181,17 +194,17 @@
 .alien-npc-image {
     width: 100px;
     height: 100px;
-    background-image: url("../../public/map3_assets/xeno.png");
+    background-image: url("../assets/map3_assets/xeno.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: 5px solid black;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .cell.water-decoration {
-    background-image: url("../../public/map3_assets/water.jpg");
+    background-image: url("../assets/map3_assets/water.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -202,7 +215,7 @@
 }
 
 .cell.egg-decoration {
-    background-image: url("../../public/map3_assets/xenoegg.png");
+    background-image: url("../assets/map3_assets/xenoegg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,13 +235,13 @@
 
 .modal-safe-area p {
     font-family: "ArcadeClassic", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .modal-content-safe-area {
     /* white background with low opacity */
     background-color: rgb(255, 255, 255, 0.3);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 5px solid black;
     background-size: cover;
@@ -245,14 +258,14 @@
 .player-img {
     width: 55px;
     height: 55px;
-    background-image: url("../../public/GIFS/IDLE/alien\ front.gif");
+    background-image: url("../assets/GIFS/IDLE/alien front.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .player-img-wrapper {
-    background-image: url("../../public/card_frame.png");
+    background-image: url("../assets/card_frame.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 80px;
@@ -266,14 +279,14 @@
 .enemy-img {
     width: 55px;
     height: 55px;
-    background-image: url("../../public/robot_front.gif");
+    background-image: url("../assets/robot_front.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .enemy-img-wrapper {
-    background-image: url("../../public/card_frame.png");
+    background-image: url("../assets/card_frame.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 80px;
@@ -295,7 +308,7 @@
     justify-content: center;
     @apply text-center;
     font-family: "ArcadeClassic", sans-serif;
-    background-image: url("../../public/player_backcard.png");
+    background-image: url("../assets/player_backcard.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -330,7 +343,7 @@
     align-items: center;
     justify-content: center;
     font-family: "ArcadeClassic", sans-serif;
-    background-image: url("../../public/enemy_backcard.png");
+    background-image: url("../assets/enemy_backcard.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -356,14 +369,14 @@
 .boss-img {
     width: 55px;
     height: 55px;
-    background-image: url("../../public/boss.gif");
+    background-image: url("../assets/boss.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .boss-arena-wall {
-    background-image: url("../../public/wall.png");
+    background-image: url("../assets/wall.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -384,7 +397,7 @@
 }
 
 .map-border {
-    background-image: url("../../public/spike\ border.png");
+    background-image: url("../assets/spike border.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -420,82 +433,82 @@
 
 /* SAFE ZONE */
 .safe-zone-tile {
-    background-image: url("../../public/map3_assets/map3floor.png");
+    background-image: url("../assets/map3_assets/map3floor.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline {
-    background-image: url("../../public/map3_assets/longpipe\ \(1\).png");
+    background-image: url("../assets/map3_assets/longpipe (1).png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline-left-down {
-    background-image: url("../../public/map3_assets/edge\ left\ down.png");
+    background-image: url("../assets/map3_assets/edge left down.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline-bottom {
-    background-image: url("../../public/map3_assets/longpipe\ \(1\).png");
+    background-image: url("../assets/map3_assets/longpipe (1).png");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(270deg);
 }
 
 .safe-zone-border-pipeline-top {
-    background-image: url("../../public/map3_assets/longpipe\ \(1\).png");
+    background-image: url("../assets/map3_assets/longpipe (1).png");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(90deg);
 }
 
 .safe-zone-border-pipeline-right {
-    background-image: url("../../public/map3_assets/longpipe\ \(1\).png");
+    background-image: url("../assets/map3_assets/longpipe (1).png");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(180deg);
 }
 
 .safe-zone-border-pipeline-left-up {
-    background-image: url("../../public/map3_assets/edge\ left\ up.png");
+    background-image: url("../assets/map3_assets/edge left up.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline-right-up {
-    background-image: url("../../public/map3_assets/edge\ right\ up.png");
+    background-image: url("../assets/map3_assets/edge right up.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline-right-bottom {
-    background-image: url("../../public/map3_assets/edge\ right\ down.png");
+    background-image: url("../assets/map3_assets/edge right down.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .safe-zone-border-pipeline-left-bottom {
-    background-image: url("../../public/map3_assets/edge\ left\ down.png");
+    background-image: url("../assets/map3_assets/edge left down.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .tower-upper {
-    background-image: url("../../public/map3_assets/half\ tower\ up.png");
+    background-image: url("../assets/map3_assets/half tower up.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .tower-lower {
-    background-image: url("../../public/map3_assets/half\ tower\ down.png");
+    background-image: url("../assets/map3_assets/half tower down.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .xeno-npc {
-    background-image: url("../../public/map3_assets/xenompoph.png");
+    background-image: url("../assets/map3_assets/xenompoph.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

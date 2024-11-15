@@ -180,7 +180,7 @@ const Modal = ({
     return (
         <div className="modal fixed inset-0 flex items-center justify-center p-4">
             <div
-                className="modal-content arcade-font-modal flex items-center justify-center flex-col bg-white h-[100vh] p-4 rounded-lg shadow-lg w-full max-w-md h-auto overflow-y-auto">
+                className="modal-content arcade-font-modal flex items-center justify-center flex-col bg-white p-4 rounded-lg shadow-lg w-full h-[100vh] overflow-y-auto">
     <span className="close cursor-pointer text-xl" onClick={closeModal}>
       &times;
     </span>

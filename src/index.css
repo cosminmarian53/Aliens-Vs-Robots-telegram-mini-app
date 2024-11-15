@@ -15,7 +15,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: rgb(31, 30, 30);
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
-    url("../public/background-site.jpg");
+    url("assets/background-site.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,10 +154,8 @@ footer {
 /* GAME-OVER */
 .game-over {
     font-family: "ArcadeClassic", sans-serif;
-    font-size: 3rem;
+    font-size: 1.3rem;
     text-align: center;
-    color: white;
-    color: red;
     animation: blink 0.3s infinite;
     text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
     3px -3px 0 #000, 0px 0px 5px #000;
@@ -165,7 +163,7 @@ footer {
 
 .game-over-header {
     font-family: "ArcadeClassic", sans-serif;
-    font-size: 6rem;
+    font-size: 3rem;
     text-align: center;
     color: white;
     color: red;
@@ -180,49 +178,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 45vh;
-}
-
-.quest-container {
-    background-image: url("../public/alien_monitor\ .png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-}
-
-.quest-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.quest-container h1 {
-    font-family: "ArcadeClassic", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    color: red;
-    animation: blink 0.3s infinite;
-    text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
-    3px -3px 0 #000, 0px 0px 5px #000;
-}
-
-.quest-container p {
-    font-family: "ArcadeClassic", sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    color: red;
-    animation: blink 0.3s infinite;
-    text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
-    3px -3px 0 #000, 0px 0px 5px #000;
 }
 
 .refresh-btn {
