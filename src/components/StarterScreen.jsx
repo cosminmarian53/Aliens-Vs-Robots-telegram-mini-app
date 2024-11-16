@@ -45,7 +45,7 @@ function StarterScreen({setHasEntered, setHasPressedUpgrade}) {
                                 and deal a percentage of the enemy's health as damage
                             </p>
                             <button
-                                className="close-modal-btn"
+                                className="close-modal-btn arcade-font"
                                 onClick={() => setIsModalOpen(false)}
                             >
                                 Close
