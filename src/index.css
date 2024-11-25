@@ -42,7 +42,16 @@ body {
 .main-header.blink-span2 {
     animation: blink-span2 0.3s infinite;
 }
-
+.bitblops{
+    font-family: "ArcadeClassic", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    color: red;
+    animation: blink 0.3s infinite;
+    text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
 @keyframes blink {
     0% {
         color: red;

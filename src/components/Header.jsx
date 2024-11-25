@@ -1,10 +1,8 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header>
       <div className="wavy">
-        <h1 className="main-header">
+        <h1 className="main-header pb-2">
           <span className="main-header blink-span">
             <span style={{ "--i": 1 }}>A</span>
             <span style={{ "--i": 2 }}>L</span>

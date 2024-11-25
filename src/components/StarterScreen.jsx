@@ -3,11 +3,11 @@ import alienPlayerStarter from "../assets/alien front(move+blink).gif";
 import "../index.css";
 
 // eslint-disable-next-line react/prop-types
-function StarterScreen({setHasEntered, setHasPressedUpgrade}) {
+function StarterScreen({setHasEntered, setHasPressedUpgrade, first_name}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <div className="starter-screen">
-            <h1>Welcome to Aliens vs. Robots❗</h1>
+            <h1>Welcome to Aliens vs. Robots, {first_name}❗</h1>
             <button
                 className="instructions-btn bg-slate-300 text-white py-2 px-4 rounded hover:bg-slate-500 transition-colors"
                 onClick={() => {
